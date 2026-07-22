@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="ai_product_description_wizard_form" model="ir.ui.view">
+        <field name="name">ai.product.description.wizard.form</field>
+        <field name="model">ai.product.description.wizard</field>
+        <field name="arch" type="xml">
+            <form string="AI Product Description">
+                <field name="has_ecommerce" invisible="1"/>
+                <group>
+                    <group>
+                        <field name="product_tmpl_id" readonly="1"/>
+                        <field name="tone"/>
+                        <field name="length"/>
+                    </group>
+                    <group>
+                        <field name="language"/>
+                        <field name="keywords"
+                               placeholder="e.g. eco-friendly, handmade, fast shipping"/>
+                    </group>
+                </group>
+                <separator string="Generated description"/>
+                <field name="generated_text" nolabel="1"
+                       placeholder="Click 'Generate' to create a description, review it, then apply."/>
+                <footer>
+                    <button name="action_generate" type="object" string="Generate"
+                            class="btn-primary" icon="fa-magic"/>
+                    <button name="action_apply_sales" type="object"
+                            string="Apply to Sales Description"
+                            class="btn-secondary" invisible="not generated_text"/>
+                    <button name="action_apply_ecommerce" type="object"
+                            string="Apply to eCommerce"
+                            class="btn-secondary"
+                            invisible="not generated_text or not has_ecommerce"/>
+                    <button string="Close" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

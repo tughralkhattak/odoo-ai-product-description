@@ -33,6 +33,37 @@ You do **not** need a paid AI subscription. Any of these work out of the box:
 | **Ollama** | 100% local, no key | <https://ollama.com> |
 | OpenAI / Anthropic | Paid (premium quality) | provider dashboard |
 
+### 🔑 How to get a FREE API key (step by step)
+
+**Option A — Groq (recommended: free + very fast)**
+
+1. Go to <https://console.groq.com/keys> and sign in (Google/GitHub login works).
+2. Click **Create API Key**, give it any name, and **copy** the key (starts with `gsk_...`).
+3. In Odoo: **Settings → AI Product Description**.
+4. Set **Provider = Groq (free API key)**, paste the key into **API Key**, and **Save**.
+5. Leave **Model** empty (defaults to `llama-3.3-70b-versatile`) and you're ready.
+
+**Option B — Google Gemini (generous free tier)**
+
+1. Go to <https://aistudio.google.com/apikey> and sign in with your Google account.
+2. Click **Create API key** and **copy** it.
+3. In Odoo: **Settings → AI Product Description**.
+4. Set **Provider = Google Gemini (free tier)**, paste the key, and **Save**.
+5. Leave **Model** empty (defaults to `gemini-2.0-flash`).
+
+**Option C — OpenRouter (access many free models)**
+
+1. Go to <https://openrouter.ai/keys>, sign in, and **Create Key**.
+2. In Odoo set **Provider = OpenRouter**, paste the key, **Save**. A free model is used by default.
+
+**Option D — Ollama (100% local, no key, no internet)**
+
+1. Install Ollama from <https://ollama.com> and run a model: `ollama pull llama3.1`.
+2. In Odoo set **Provider = Ollama (local, free, no key)** — no API key needed.
+3. If Odoo runs in Docker, set **API Base URL** to reach your host (e.g. `http://host.docker.internal:11434`).
+
+> 💡 That's it — open any product, click **AI Description**, choose a tone, and hit **Generate**.
+
 ## 🚀 Installation
 
 1. Copy the `ai_product_description` folder into your Odoo `addons` path.

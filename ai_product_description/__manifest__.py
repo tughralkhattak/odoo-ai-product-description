@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "AI Product Description Generator",
-    "version": "19.0.1.0.0",
+    "version": "17.0.1.0.0",
     "summary": "Generate compelling product descriptions with AI — "
                "OpenAI, Groq (free), Google Gemini (free), OpenRouter (free), Claude or local Ollama.",
     "description": """

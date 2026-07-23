@@ -15,8 +15,8 @@ Groq, Google Gemini, OpenRouter and local Ollama.
 See the full feature list and screenshots in the module description page.
 """,
     "category": "Sales/Sales",
-    "author": "Tughral Khattak",
-    "website": "https://github.com/tughralkhattak/odoo-ai-product-description",
+    "author": "Zarki",
+    "website": "https://github.com/zarkidev/odoo-ai-product-description",
     "license": "LGPL-3",
     "depends": ["product"],
     "data": [

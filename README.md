@@ -100,4 +100,4 @@ through any other third-party service.
 
 ## 👤 Author
 
-**Tughral Khattak** — Software Engineer · Odoo Developer
+**Zarki** — Software Engineer · Odoo Developer
